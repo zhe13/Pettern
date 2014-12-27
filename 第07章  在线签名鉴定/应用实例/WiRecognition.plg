@@ -1,0 +1,85 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WiRecognition - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPE5.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\backward.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\baum.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\Clustering.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\forward.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\hmmrand.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\hmmutils.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\movement.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\nrutils.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\sequence.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\viterbi.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\Wi.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\WiRecognition.cpp"
+"G:\VC++模式识别\源代码\第07章  在线签名鉴定\应用实例\WiRecognitionDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPE5.tmp" 
+Creating temporary file "C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPE6.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/WiRecognition.pdb" /debug /machine:I386 /out:"Debug/WiRecognition.exe" /pdbtype:sept 
+".\Debug\AddSampleDlg.obj"
+".\Debug\backward.obj"
+".\Debug\baum.obj"
+".\Debug\Clustering.obj"
+".\Debug\dih.obj"
+".\Debug\dtwrecoge.obj"
+".\Debug\forward.obj"
+".\Debug\hmmrand.obj"
+".\Debug\hmmutils.obj"
+".\Debug\movement.obj"
+".\Debug\nrutils.obj"
+".\Debug\sequence.obj"
+".\Debug\StdAfx.obj"
+".\Debug\vdtwrecoge.obj"
+".\Debug\viterbi.obj"
+".\Debug\Wi.obj"
+".\Debug\WiRecognition.obj"
+".\Debug\WiRecognitionDlg.obj"
+".\Debug\WiRecognition.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPE6.tmp"
+<h3>Output Window</h3>
+Compiling...
+backward.cpp
+baum.cpp
+g:\vc++模式识别\源代码\第07章  在线签名鉴定\应用实例\baum.cpp(20) : warning C4101: 'threshold' : unreferenced local variable
+forward.cpp
+hmmrand.cpp
+hmmutils.cpp
+movement.cpp
+g:\vc++模式识别\源代码\第07章  在线签名鉴定\应用实例\movement.cpp(104) : warning C4101: 'j' : unreferenced local variable
+nrutils.cpp
+sequence.cpp
+g:\vc++模式识别\源代码\第07章  在线签名鉴定\应用实例\sequence.cpp(16) : warning C4101: 'o_t' : unreferenced local variable
+g:\vc++模式识别\源代码\第07章  在线签名鉴定\应用实例\sequence.cpp(16) : warning C4101: 'q_t' : unreferenced local variable
+viterbi.cpp
+Generating Code...
+g:\vc++模式识别\源代码\第07章  在线签名鉴定\应用实例\movement.cpp(81) : warning C4700: local variable 'lm2' used without having been initialized
+g:\vc++模式识别\源代码\第07章  在线签名鉴定\应用实例\movement.cpp(173) : warning C4700: local variable 'lm2' used without having been initialized
+Compiling...
+Wi.cpp
+WiRecognition.cpp
+WiRecognitionDlg.cpp
+Generating Code...
+Compiling...
+Clustering.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+WiRecognition.exe - 0 error(s), 6 warning(s)
+</pre>
+</body>
+</html>

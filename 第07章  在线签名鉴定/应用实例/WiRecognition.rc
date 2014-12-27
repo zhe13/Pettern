@@ -1,0 +1,266 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\WiRecognition.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\WiRecognition.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 WiRecognition"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "WiRecognition 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2001",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_WIRECOGNITION_DIALOG DIALOGEX 0, 0, 491, 271
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "笔迹鉴别"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "输入训练样本",IDC_INPUT_TRAIN,20,20,56,11
+    PUSHBUTTON      "输入测试样本",IDC_INPUT_TEST,416,40,56,11
+    PUSHBUTTON      "判        别",IDC_RECOGNITION,416,126,56,11
+    PUSHBUTTON      "保存模板",IDC_SAVE_TEMP,20,239,56,11
+    GROUPBOX        "处理",IDC_STATIC,13,7,72,252
+    CONTROL         "",IDC_PICTURE1,"Static",SS_WHITERECT | WS_BORDER,110,27,
+                    177,91
+    CONTROL         "",IDC_PICTURE2,"Static",SS_WHITERECT | WS_BORDER,110,
+                    143,178,92
+    GROUPBOX        "图表",IDC_STATIC,91,7,211,252
+    GROUPBOX        "笔迹图象",IDC_STATIC,100,17,197,108
+    GROUPBOX        "压力－时间",IDC_STATIC,100,134,198,108
+    PUSHBUTTON      "前一幅",IDC_PREV,20,83,56,11
+    PUSHBUTTON      "后一幅",IDC_NEXT,20,104,56,11
+    GROUPBOX        "",IDC_STATIC,409,7,66,158
+    PUSHBUTTON      "帮助",IDC_ABOUT,419,180,50,14
+    PUSHBUTTON      "退出",IDC_EXIT,419,225,50,14
+    PUSHBUTTON      "生成模板",IDC_GENTEMP,20,218,56,11
+    PUSHBUTTON      "显示笔迹图象",IDC_SHOW1,20,41,56,11
+    PUSHBUTTON      "显示压力曲线",IDC_SHOW2,20,62,56,11
+    GROUPBOX        "训练样本",IDC_STATIC,305,7,100,123
+    SCROLLBAR       IDC_SCROLLBAR1,99,245,198,8
+    EDITTEXT        IDC_EDIT1,311,19,86,105,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    EDITTEXT        IDC_EDIT2,312,144,86,110,ES_MULTILINE | WS_VSCROLL | 
+                    WS_HSCROLL
+    GROUPBOX        "测试样本",IDC_STATIC,306,134,99,125
+    PUSHBUTTON      "装载模板",IDC_LOAD_TEMP,416,83,56,11
+    COMBOBOX        IDC_METHOD,20,195,55,58,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "方法选择",IDC_STATIC,17,173,62,41
+    CONTROL         "测试样本",IDC_RADIO_TEST,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,25,133,48,10
+    CONTROL         "训练样本",IDC_RADIO_TRAIN,"Button",BS_AUTORADIOBUTTON,
+                    25,149,48,10
+    GROUPBOX        "图象",IDC_STATIC,18,121,62,44
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "WiRecognition Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "WiRecognition\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "WiRecognition.EXE\0"
+            VALUE "ProductName", "WiRecognition 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_WIRECOGNITION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 483
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 263
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_WIRECOGNITION_DIALOG DLGINIT
+BEGIN
+    IDC_METHOD, 0x403, 9, 0
+0xa3c4, 0xe5b0, 0xb9d1, 0xa6c1, "\000" 
+    IDC_METHOD, 0x403, 10, 0
+0xa3c4, 0xe5b0, 0xd758, 0xb1f8, 0x00ea, 
+    IDC_METHOD, 0x403, 10, 0
+0xa3c4, 0xe5b0, 0xd759, 0xb1f8, 0x00ea, 
+    IDC_METHOD, 0x403, 9, 0
+0xa3c4, 0xe5b0, 0xa358, 0x59ad, "\000" 
+    IDC_METHOD, 0x403, 9, 0
+0xb8bc, 0xceba, 0xd8cc, 0xf7d5, "\000" 
+    IDC_METHOD, 0x403, 11, 0
+0xbdb7, 0xf2cf, 0xb1d6, 0xbdb7, 0xbccd, "\000" 
+    IDC_METHOD, 0x403, 8, 0
+0xf2cf, 0x2020, 0xc120, 0x00bf, 
+    IDC_METHOD, 0x403, 8, 0
+0x5156, 0xcdba, 0x4d48, 0x004d, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 WiRecognition(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\WiRecognition.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

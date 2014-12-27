@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: bw - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/bw.res" /d "NDEBUG" "G:\VC++模式识别\源代码\第04章  常用搜索算法\黑白棋\bw.rc"" 
+Creating temporary file "C:\DOCUME~1\lhr\LOCALS~1\Temp\RSP8E.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/bw.pdb" /machine:I386 /out:"Release/bw.exe" 
+".\Release\bw.obj"
+".\Release\bwDoc.obj"
+".\Release\Bwfind.obj"
+".\Release\bwView.obj"
+".\Release\MainFrm.obj"
+".\Release\StdAfx.obj"
+".\Release\bw.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lhr\LOCALS~1\Temp\RSP8E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+bw.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

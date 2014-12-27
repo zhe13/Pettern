@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{3B5F259F-EE86-4443-95B6-CAD886B08C46} = s 'Pattern'
+		'Pattern.EXE'
+		{
+			val AppID = s {3B5F259F-EE86-4443-95B6-CAD886B08C46}
+		}
+	}
+}

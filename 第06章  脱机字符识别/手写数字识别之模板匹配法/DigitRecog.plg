@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DigitRecog - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/DigitRecog.res" /d "_DEBUG" "G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\DigitRecog.rc"" 
+Creating temporary file "C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPC9.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/DigitRecog.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\AddSampleDlg.cpp"
+"G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\backprop.cpp"
+"G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\CqOctree.cpp"
+"G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\Dib.cpp"
+"G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\Dibapi.cpp"
+"G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\DigitClass.cpp"
+"G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\DigitRecog.cpp"
+"G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\DigitRecogDlg.cpp"
+"G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\IP.CPP"
+"G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\Thinner.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPC9.tmp" 
+Creating temporary file "C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPCA.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/DigitRecog.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPCA.tmp" 
+Creating temporary file "C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPCB.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DigitRecog.pdb" /debug /machine:I386 /out:"Debug/DigitRecog.exe" /pdbtype:sept 
+".\Debug\AddSampleDlg.obj"
+".\Debug\backprop.obj"
+".\Debug\CqOctree.obj"
+".\Debug\Dib.obj"
+".\Debug\Dibapi.obj"
+".\Debug\DigitClass.obj"
+".\Debug\DigitRecog.obj"
+".\Debug\DigitRecogDlg.obj"
+".\Debug\IP.OBJ"
+".\Debug\StdAfx.obj"
+".\Debug\Thinner.obj"
+".\Debug\DigitRecog.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPCB.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AddSampleDlg.cpp
+backprop.cpp
+CqOctree.cpp
+Dib.cpp
+Dibapi.cpp
+DigitClass.cpp
+DigitRecog.cpp
+DigitRecogDlg.cpp
+G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\DigitRecogDlg.cpp(389) : warning C4101: 'sampleTemp' : unreferenced local variable
+G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\DigitRecogDlg.cpp(409) : warning C4101: 'sampleTemp' : unreferenced local variable
+IP.CPP
+Thinner.cpp
+G:\VC++模式识别\源代码\第06章  脱机字符识别\手写数字识别之模板匹配法\Thinner.cpp(418) : warning C4244: '=' : conversion from 'short' to 'char', possible loss of data
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DigitRecog.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

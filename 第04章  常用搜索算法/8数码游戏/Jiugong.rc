@@ -1,0 +1,311 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Jiugong.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Jiugong.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 45
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于九宫"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,15,20,20
+    LTEXT           "重排九宫程序",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "确定",IDOK,178,8,50,14,WS_GROUP
+END
+
+IDD_JIUGONG_DIALOG DIALOGEX 0, 0, 327, 209
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "8数码游戏"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_PIC_INIT,"Static",SS_BLACKRECT,5,15,60,60
+    CONTROL         "",IDC_PIC_OBJ,"Static",SS_BLACKRECT,75,15,60,60
+    CONTROL         "",IDC_PIC_PROCESS,"Static",SS_BLACKRECT,145,15,60,60
+    LTEXT           "初始状态",IDC_STATIC,5,5,33,8
+    LTEXT           "目标状态",IDC_STATIC,75,5,33,8
+    LTEXT           "搜索过程显示",IDC_STATIC,145,5,49,8
+    CONTROL         "人工",IDC_RADIO_MAN,"Button",BS_AUTORADIOBUTTON,15,120,
+                    32,10
+    CONTROL         "机器",IDC_RADIO_MAC,"Button",BS_AUTORADIOBUTTON,15,135,
+                    32,10
+    GROUPBOX        "选择",IDC_STATIC,10,110,40,40
+    PUSHBUTTON      "上",IDC_BUTTON_UP,90,120,15,14
+    PUSHBUTTON      "左",IDC_BUTTON_LEFT,70,140,15,14
+    PUSHBUTTON      "右",IDC_BUTTON_RIGHT,110,140,15,14
+    PUSHBUTTON      "下",IDC_BUTTON_DOWN,90,160,15,14
+    GROUPBOX        "操作",IDC_STATIC,65,110,65,70
+    PUSHBUTTON      "搜索最优解",IDC_BUTTON_SEARCH,150,85,50,14
+    PUSHBUTTON      "显示走步过程",IDC_BUTTON_SHOW,150,110,50,14
+    PUSHBUTTON      "输入初始状态",IDC_BUTTON_INPUT_INIT,10,85,50,14
+    PUSHBUTTON      "输入目标状态",IDC_BUTTON_INPUT_OBJ,80,85,50,14
+    EDITTEXT        IDC_EDIT_STATE,40,185,165,15,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    LTEXT           "状态提示",IDC_STATIC,5,191,33,8
+    PUSHBUTTON      "自动演示",IDC_BUTTON_AUTO,150,135,50,14
+    PUSHBUTTON      "设置搜索深度",IDC_BUTTON_DEPTH,150,160,50,14
+    GROUPBOX        "",IDC_STATIC,140,75,65,105
+    PUSHBUTTON      "恢复显示",IDC_BUTTON_HUIFU,5,160,50,14
+    GROUPBOX        "使用说明",IDC_STATIC,215,5,105,200
+    LTEXT           "九宫图即通过将空格和上",IDC_STATIC,222,43,89,8
+    LTEXT           "下左右相邻的数交换，从",IDC_STATIC,223,69,89,8
+    LTEXT           "初始状态移到目标状态",IDC_STATIC,224,95,81,8
+END
+
+IDD_DIALOG_INPUT DIALOG DISCARDABLE  0, 0, 109, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请输入数据(0-8)"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,80,10,25,14
+    PUSHBUTTON      "取消",IDCANCEL,80,35,25,14
+    EDITTEXT        IDC_EDIT1,5,5,15,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,30,5,15,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,55,5,15,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,5,25,15,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,30,25,15,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,55,25,15,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,5,45,15,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,30,45,15,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,55,45,15,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_WAIT DIALOG DISCARDABLE  0, 0, 117, 27
+STYLE DS_SETFOREGROUND | WS_POPUP | WS_BORDER
+FONT 10, "System"
+BEGIN
+    LTEXT           "正在搜索，请耐心等待......",IDC_STATIC,10,10,93,8
+END
+
+IDD_DIALOG_DEPTH DIALOG DISCARDABLE  0, 0, 124, 50
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "搜索深度"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,80,5,35,14
+    PUSHBUTTON      "取消",IDCANCEL,80,25,35,14
+    EDITTEXT        IDC_EDIT1,10,30,40,14,ES_AUTOHSCROLL
+    LTEXT           "请输入搜索深度",IDC_STATIC,10,5,57,8
+    LTEXT           "(建议为25－200)",IDC_STATIC,10,15,57,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Jiugong Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Jiugong\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2001\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Jiugong.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Jiugong 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 38
+    END
+
+    IDD_JIUGONG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 320
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 202
+    END
+
+    IDD_DIALOG_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 102
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_DIALOG_WAIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 20
+    END
+
+    IDD_DIALOG_DEPTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 43
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_NULL         BITMAP  DISCARDABLE     "res\\bitmap_0.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\bitmap3.bmp"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\bitmap4.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\bitmap5.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\bitmap6.bmp"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "res\\bitmap7.bmp"
+IDB_BITMAP8             BITMAP  DISCARDABLE     "res\\bitmap8.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Jiugong(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Jiugong.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,19 @@
+
+	// Pattern.idl : IDL source for Pattern.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (Pattern.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(F4CE362B-9814-4450-85D7-762ED2E8FE42),
+	version(1.0),
+	helpstring("Pattern 1.0 Type Library")
+]
+library PatternLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	

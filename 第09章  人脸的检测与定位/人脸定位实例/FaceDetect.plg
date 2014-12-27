@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: FaceDetect - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/FaceDetect.res" /d "_DEBUG" "G:\VC++模式识别\源代码\第09章  人脸的检测与定位\人脸定位实例\FaceDetect.rc"" 
+Creating temporary file "C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPF1.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/FaceDetect.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\VC++模式识别\源代码\第09章  人脸的检测与定位\人脸定位实例\AddSampleDlg.cpp"
+"G:\VC++模式识别\源代码\第09章  人脸的检测与定位\人脸定位实例\Dib.cpp"
+"G:\VC++模式识别\源代码\第09章  人脸的检测与定位\人脸定位实例\FaceDetect.cpp"
+"G:\VC++模式识别\源代码\第09章  人脸的检测与定位\人脸定位实例\FaceDetectDlg.cpp"
+"G:\VC++模式识别\源代码\第09章  人脸的检测与定位\人脸定位实例\HairFace.cpp"
+"G:\VC++模式识别\源代码\第09章  人脸的检测与定位\人脸定位实例\LikelyHood.cpp"
+"G:\VC++模式识别\源代码\第09章  人脸的检测与定位\人脸定位实例\ReplaceDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPF1.tmp" 
+Creating temporary file "C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPF2.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Debug/FaceDetect.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"G:\VC++模式识别\源代码\第09章  人脸的检测与定位\人脸定位实例\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPF2.tmp" 
+Creating temporary file "C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPF3.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/FaceDetect.pdb" /debug /machine:I386 /out:"Debug/FaceDetect.exe" /pdbtype:sept 
+".\Debug\AddSampleDlg.obj"
+".\Debug\Dib.obj"
+".\Debug\FaceDetect.obj"
+".\Debug\FaceDetectDlg.obj"
+".\Debug\HairFace.obj"
+".\Debug\LikelyHood.obj"
+".\Debug\ReplaceDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\FaceDetect.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPF3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AddSampleDlg.cpp
+Dib.cpp
+FaceDetect.cpp
+FaceDetectDlg.cpp
+HairFace.cpp
+LikelyHood.cpp
+ReplaceDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+FaceDetect.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

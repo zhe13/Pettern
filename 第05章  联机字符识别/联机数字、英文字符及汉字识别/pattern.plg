@@ -1,0 +1,32 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: pattern - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/pattern.res" /d "_DEBUG" /d "_AFXDLL" "G:\VC++模式识别\源代码\第05章  联机字符识别\联机数字、英文字符及汉字识别\pattern.rc"" 
+Creating temporary file "C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPC2.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/pattern.pdb" /debug /machine:I386 /out:"Debug/pattern.exe" /pdbtype:sept 
+".\Debug\Inputdialog.obj"
+".\Debug\pattern.obj"
+".\Debug\patternDlg.obj"
+".\Debug\PatternView.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Store.obj"
+".\Debug\pattern.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\lhr\LOCALS~1\Temp\RSPC2.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+pattern.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
